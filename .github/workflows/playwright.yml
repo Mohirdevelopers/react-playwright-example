@@ -22,7 +22,7 @@ jobs:
       env:
         CI: true
     - name: Wait for web server to be ready
-      run: npx wait-on http://127.0.0.1:5173
+      run: npx wait-on http://localhost:5173
     - name: Run Playwright tests
       run: npx playwright test
     - uses: actions/upload-artifact@v4
